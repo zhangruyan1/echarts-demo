@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据可视化项目</title>
+    <link rel="stylesheet" href="fonts/icomoon.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 父容器大盒子 -->
+    <div class="viewport">
+      <div class="column">
+        <!-- 概览区域模块制作 -->
+        <div class="panel overview">
+          <div class="inner">
+            <ul>
+              <li>
+                <h4>291953</h4>
+                <span style="font-size:10px;">
+                  <i class="icon-dot" style="color: #006cff;"></i>
+                  <!-- 设备总数 -->某日现有确诊
+                </span>
+              </li>
+              <li class="item">
+                <h4>5310</h4>
+                <span style="font-size:10px;">
+                  <i class="icon-dot" style="color: #6acca3"></i>
+                  某日新增确诊
+                </span>
+              </li>
+              <li>
+                <h4>54764</h4>
+                <span style="font-size:10px;">
+                  <i class="icon-dot" style="color: #6acca3"></i>
+                  某日累计确诊
+                </span>
+              </li>
+              <li>
+                <h4>xxx</h4>
+                <span style="font-size:10px;">
+                  <i class="icon-dot" style="color: #ed3f35"></i>
+                  累计死亡
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 各区域具体监控制作 -->
+        <div class="panel monitor">
+          <div class="inner">
+            <div class="tabs">
+              <a href="javascript:;" class="active">某些地区</a>
+              <a href="javascript:;">其他地区</a>
+            </div>
+            <div class="content" style="display: block;">
+              <div class="head">
+                <span class="col">当日时间</span>
+                <span class="col">所在地区</span>
+                <span class="col">相关资讯</span>
+              </div>
+              <div class="marquee-view">
+                <div class="marquee">
+                  <div class="row">
+                    <span class="col">20220422</span>
+                    <span class="col">上海市</span>
+                    <span class="col"><a href="https://wsjkw.sh.gov.cn/yqtb/index.html">点击</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20220422</span>
+                    <span class="col">山西省大同市</span>
+                    <span class="col"><a href="http://www.dt.gov.cn/dtzww/yqfkdtzxd/yiqingN.shtml">点击</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20220422</span>
+                    <span class="col">山西省太原市</span>
+                    <span class="col"><a href="http://wjw.taiyuan.gov.cn/">点击</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20220422</span>
+                    <span class="col">山西省朔州</span>
+                    <span class="col"><a href="http://www.shuozhou.gov.cn/ztjs/qlzh/">点击</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20220422</span>
+                    <span class="col">内蒙古自治区呼和浩特市</span>
+                    <span class="col"><a href="http://wjw.huhhot.gov.cn/zwdt/yqfkdt/">点击</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20220422</span>
+                    <span class="col">吉林省长春市</span>
+                    <span class="col"><a href="http://wjw.changchun.gov.cn/xwzx/tzgg/">点击</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20220422</span>
+                    <span class="col">黑龙江省哈尔滨市</span>
+                    <span class="col"><a href="http://wsjkw.hlj.gov.cn/">点击</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="head">
+                <span class="col">当日时间</span>
+                <span class="col">所在地区</span>
+                <span class="col">查看链接</span>
+              </div>
+              <div class="marquee-view">
+                <div class="marquee">
+                  <div class="row">
+                    <span class="col">20190422</span>
+                    <span class="col">xx省xx市</span>
+                    <span class="col"><a href="http://www.nhc.gov.cn/">查看</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20190422</span>
+                    <span class="col">xx省xx市</span>
+                    <span class="col"><a href="http://www.nhc.gov.cn/">查看</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20190422</span>
+                    <span class="col">xx省xx市</span>
+                    <span class="col"><a href="http://www.nhc.gov.cn/">查看</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20190422</span>
+                    <span class="col">xx省xx市</span>
+                    <span class="col"><a href="http://www.nhc.gov.cn/">查看</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                  <div class="row">
+                    <span class="col">20190422</span>
+                    <span class="col">xx省xx市</span>
+                    <span class="col"><a href="http://www.nhc.gov.cn/">查看</a></span>
+                    <span class="icon-dot"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 点位分布统计模块制作 -->
+        <div class="point panel">
+          <div class="inner">
+            <h3>某日某些地区部分数据(不具有参考性))</h3>
+            <div class="chart">
+              <div class="pie"></div>
+              <div class="data">
+                <div class="item">
+                  <h4>663,393</h4>
+                  <span>
+                    <i class="icon-dot" style="color: #ed3f35"></i>
+                   大陆累计确诊
+                  </span>
+                </div>
+                <div class="item">
+                  <h4>4657</h4>
+                  <span>
+                    <i class="icon-dot" style="color: #eacf19"></i>
+                    大陆累计死亡
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <!-- 地图模块 -->
+        <div class="map">
+          <h3>
+            <span class="icon-cube"></span>
+            练习部分航线（不具有真实性）
+          </h3>
+          <div class="chart">
+            <div class="geo"></div>
+          </div>
+        </div>
+        <!-- 用户统计模块 -->
+        <div class="users panel">
+          <div class="inner">
+            <h3>查看本页面总量统计</h3>
+            <div class="chart">
+              <div class="bar"></div>
+              <div class="data">
+                <div class="item">
+                  <h4>120,899</h4>
+                  <span>
+                    <i class="icon-dot" style="color: #ed3f35"></i>
+                    用户总量
+                  </span>
+                </div>
+                <div class="item">
+                  <h4>248</h4>
+                  <span>
+                    <i class="icon-dot" style="color: #eacf19"></i>
+                    本月新增
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <!-- 订单 -->
+        <div class="order panel">
+          <div class="inner">
+            <!-- 筛选 -->
+            <div class="filter">
+              <a href="javascript:;" class="active">2022</a>
+              <a href="javascript:;">2021</a>
+              <a href="javascript:;">2020</a>
+              <a href="javascript:;">2019</a>
+            </div>
+            <!-- 数据 -->
+            <div class="data">
+              <div class="item">
+                <h4>33.2亿</h4>
+                <span>
+                  <i class="icon-dot" style="color: #ed3f35;"></i>
+                  截至某日疫苗接种量
+                </span>
+              </div>
+              <div class="item">
+                <h4>xxxxx亿</h4>
+                <span>
+                  <i class="icon-dot" style="color: #eacf19;"></i>
+                  抗疫投入
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 销售额 -->
+        <div class="sales panel">
+          <div class="inner">
+            <div class="caption">
+              <h3>物资销售额统计</h3>
+              <a href="javascript:;" class="active" data-type="year">年</a>
+              <a href="javascript:;" data-type="quarter">季</a>
+              <a href="javascript:;" data-type="month">月</a>
+              <a href="javascript:;" data-type="week">周</a>
+            </div>
+            <div class="chart">
+              <div class="label">单位:万</div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 渠道分布以及季度销售模块 -->
+        <div class="wrap">
+          <div class="channel panel">
+            <div class="inner">
+              <h3>防疫渠道分布</h3>
+              <div class="data">
+                <div class="radar"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 销售进度模块 -->
+          <div class="quarter panel">
+            <div class="inner">
+              <h3>防疫物品销售进度</h3>
+              <div class="chart">
+                <div class="box">
+                  <div class="gauge"></div>
+                  <div class="label">50<small> %</small></div>
+                </div>
+                <div class="data">
+                  <div class="item">
+                    <h4>xx</h4>
+                    <span>
+                      <i class="icon-dot" style="color: #6acca3"></i>
+                      销售额(万元)
+                    </span>
+                  </div>
+                  <div class="item">
+                    <h4>xx%</h4>
+                    <span>
+                      <i class="icon-dot" style="color: #ed3f35"></i>
+                      同比增长
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 全国热榜模块制作 -->
+        <div class="top panel">
+          <div class="inner">
+            <div class="all">
+              <h3>防疫物资购买热榜</h3>
+              <ul>
+                <li>
+                  <i class="icon-cup1" style="color: #d93f36;"></i>
+                  一次性口罩
+                </li>
+                <li>
+                  <i class="icon-cup2" style="color: #68d8fe;"></i>
+                  消毒酒精
+                </li>
+                <li>
+                  <i class="icon-cup3" style="color: #4c9bfd;"></i>
+                  体温计
+                </li>
+              </ul>
+            </div>
+            <div class="province">
+              <h3 style="margin-left: 0.1875rem"> 各省热销 <i class="date">// 近30日 //</i></h3>
+              <div class="data">
+                <ul class="sup"></ul>
+                  
+                <ul class="sub">
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+    <!-- 想使用中国地图必须先引用这个china.js文件 -->
+    <script src="js/china.js"></script>
+    <!-- 引入我们自己的地图js文件 -->
+    <script src="js/myMap.js"></script>
+  </body>
+</html>
